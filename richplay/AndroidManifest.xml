@@ -52,7 +52,6 @@
         <activity android:name=".activity.PCenterActivity" />
         <activity
             android:name=".activity.PicInfoActivity"
-            android:configChanges="orientation|keyboardHidden"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity android:name=".activity.UserEditActivity" />
         <activity

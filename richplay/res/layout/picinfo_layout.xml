@@ -25,7 +25,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp" >
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
 
                 <Button
                     android:id="@+id/share"
@@ -45,31 +48,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="5dp"
                     android:background="@drawable/save" />
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#D7D7D7" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:paddingRight="5dp" >
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
 
                 <com.yingqida.richplay.widget.RoundAngleImageView
                     android:id="@+id/img_head"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_margin="5dp"
+                    android:layout_marginRight="5dp"
                     android:src="@drawable/icon" />
 
                 <EditText
                     android:id="@+id/editText1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shuru"
                     android:gravity="center_vertical"
-                    android:lines="1" >
+                    android:hint="@string/wolaifayan"
+                    android:lines="1"
+                    android:paddingLeft="5px"
+                    android:paddingRight="5px" >
                 </EditText>
 
                 <requestFocus />
@@ -78,15 +92,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:background="@color/color_pcenter_bg"
+                android:background="@color/Color_White"
                 android:orientation="vertical" >
 
                 <com.yingqida.richplay.widget.MyListView
                     android:id="@+id/listComm"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:cacheColorHint="#00000000" 
-                    android:fillViewport="true">
+                    android:cacheColorHint="#00000000"
+                    android:fillViewport="true" >
                 </com.yingqida.richplay.widget.MyListView>
             </LinearLayout>
         </LinearLayout>

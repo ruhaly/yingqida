@@ -57,6 +57,7 @@
     <string name="geren">個人簡介</string>
     <string name="jiaoyu">教育學校</string>
     <string name="renzhi">任職公司</string>
+    <string name="wolaifayan">我來發言</string>
 
     <string-array name="home_tab_tag">
         <item>首頁</item>
