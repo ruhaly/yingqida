@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
-            android:background="@drawable/tab_home_drawable"
+            android:background="@drawable/tab_home_g"
             android:clickable="true"
             android:focusable="true"
             android:onClick="tabClick" />
@@ -64,9 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/tab_search_drawable"
+            android:background="@drawable/tab_search_p"
             android:clickable="true"
-            android:focusable="true"
             android:onClick="tabClick" />
 
         <TextView
@@ -74,9 +73,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
-            android:background="@drawable/tab_center_drawable"
+            android:background="@drawable/tab_center_p"
             android:clickable="true"
-            android:focusable="true"
             android:onClick="tabClick" />
     </FrameLayout>
 

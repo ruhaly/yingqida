@@ -285,16 +285,50 @@ public class HomeActivity extends TabSuperActivity {
 		switch (view.getId()) {
 		case R.id.img_home: {
 			mTabHost.setCurrentTab(TAB_HOME);
+			setTabBg(TAB_HOME);
 			break;
 		}
 		case R.id.img_search: {
 			mTabHost.setCurrentTab(TAB_SEARCHE);
+			setTabBg(TAB_SEARCHE);
 			break;
 		}
 		case R.id.img_center: {
 			mTabHost.setCurrentTab(TAB_CENTER);
+			setTabBg(TAB_CENTER);
 			break;
 		}
+		}
+	}
+
+	public void setTabBg(int viewId) {
+		switch (viewId) {
+		case TAB_HOME:
+			findViewById(R.id.img_home).setBackgroundResource(
+					R.drawable.tab_home_g);
+			findViewById(R.id.img_search).setBackgroundResource(
+					R.drawable.tab_search_p);
+			findViewById(R.id.img_center).setBackgroundResource(
+					R.drawable.tab_center_p);
+			break;
+		case TAB_SEARCHE:
+			findViewById(R.id.img_home).setBackgroundResource(
+					R.drawable.tab_home_p);
+			findViewById(R.id.img_search).setBackgroundResource(
+					R.drawable.tab_search_g);
+			findViewById(R.id.img_center).setBackgroundResource(
+					R.drawable.tab_center_p);
+			break;
+		case TAB_CENTER:
+			findViewById(R.id.img_home).setBackgroundResource(
+					R.drawable.tab_home_p);
+			findViewById(R.id.img_search).setBackgroundResource(
+					R.drawable.tab_search_p);
+			findViewById(R.id.img_center).setBackgroundResource(
+					R.drawable.tab_center_g);
+			break;
+		default:
+			break;
 		}
 	}
 }

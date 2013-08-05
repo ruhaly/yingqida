@@ -14,10 +14,11 @@ import android.widget.TextView;
 import com.yingqida.richplay.R;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.entity.Comment;
+import com.yingqida.richplay.widget.MyListView;
 
 public class PicInfoActivity extends SuperActivity {
 
-	private ListView listComm;
+	private MyListView listComm;
 
 	Adapter adapter;
 
@@ -36,7 +37,7 @@ public class PicInfoActivity extends SuperActivity {
 	@Override
 	public void initLayout() {
 		setContentView(R.layout.picinfo_layout);
-		listComm = (ListView) findViewById(R.id.listComm);
+		listComm = (MyListView) findViewById(R.id.listComm);
 
 		if (null == adapter) {
 			adapter = new Adapter();
