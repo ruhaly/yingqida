@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/packet
+END
+HttpSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/packet/HttpSender.java
+END
+HttpXml.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/RealMe_Client_Android/!svn/ver/6201/realmestore_new_rmm/src/com/fengrun/realmestore/packet/HttpXml.java
+END
+UdpCommond.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RealMe_Client_Android/!svn/ver/6271/realmestore_new_rmm/src/com/fengrun/realmestore/packet/UdpCommond.java
+END
+UdpSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/packet/UdpSender.java
+END
+UdpXml.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/RealMe_Client_Android/!svn/ver/6439/realmestore_new_rmm/src/com/fengrun/realmestore/packet/UdpXml.java
+END
+BaseXml.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/packet/BaseXml.java
+END
+HttpAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/packet/HttpAction.java
+END

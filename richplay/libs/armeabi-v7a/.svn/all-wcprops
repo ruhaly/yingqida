@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RealMe_Client_Android/!svn/ver/5743/realmestore_new_rmm/libs/armeabi-v7a
+END
+libavcjni.so
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RealMe_Client_Android/!svn/ver/5738/realmestore_new_rmm/libs/armeabi-v7a/libavcjni.so
+END
+libyuvscale.so
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/RealMe_Client_Android/!svn/ver/5735/realmestore_new_rmm/libs/armeabi-v7a/libyuvscale.so
+END
+libplayer.so
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RealMe_Client_Android/!svn/ver/5742/realmestore_new_rmm/libs/armeabi-v7a/libplayer.so
+END
+libfaad2.so
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RealMe_Client_Android/!svn/ver/5740/realmestore_new_rmm/libs/armeabi-v7a/libfaad2.so
+END
+libaac-encoder.so
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RealMe_Client_Android/!svn/ver/5737/realmestore_new_rmm/libs/armeabi-v7a/libaac-encoder.so
+END
+liblocSDK3.so
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/RealMe_Client_Android/!svn/ver/5741/realmestore_new_rmm/libs/armeabi-v7a/liblocSDK3.so
+END
+libvcodec.so
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RealMe_Client_Android/!svn/ver/5743/realmestore_new_rmm/libs/armeabi-v7a/libvcodec.so
+END
+libaac.so
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RealMe_Client_Android/!svn/ver/5736/realmestore_new_rmm/libs/armeabi-v7a/libaac.so
+END
+libdenoise.so
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/RealMe_Client_Android/!svn/ver/5739/realmestore_new_rmm/libs/armeabi-v7a/libdenoise.so
+END

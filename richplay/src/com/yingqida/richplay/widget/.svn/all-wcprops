@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget
+END
+WheelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/WheelView.java
+END
+GifView.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/GifView.java
+END
+TextGundongView.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/TextGundongView.java
+END
+ArrayWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/ArrayWheelAdapter.java
+END
+WheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/WheelAdapter.java
+END
+MyLinearLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/MyLinearLayout.java
+END
+AlwaysMarqueeTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/AlwaysMarqueeTextView.java
+END
+OnWheelChangedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/OnWheelChangedListener.java
+END
+UGallery.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/UGallery.java
+END
+OnWheelScrollListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/OnWheelScrollListener.java
+END
+CustomPopupWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/CustomPopupWindow.java
+END
+ScrollForeverTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/ScrollForeverTextView.java
+END
+TextSurfaceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/widget/TextSurfaceView.java
+END
+NumericWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/NumericWheelAdapter.java
+END
+PullToRefreshView.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/PullToRefreshView.java
+END
+MyPopWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/widget/MyPopWindow.java
+END

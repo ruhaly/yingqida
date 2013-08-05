@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http
+END
+PingjiaResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/PingjiaResponse.java
+END
+MediaTypeResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/MediaTypeResponse.java
+END
+AdResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/AdResponseEntity.java
+END
+GetAddressListResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetAddressListResponse.java
+END
+VersionResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/VersionResponseEntity.java
+END
+HttpRspEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HttpRspEntity.java
+END
+HttpRspHanlder.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HttpRspHanlder.java
+END
+SortResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/SortResponseEntity.java
+END
+HotTagResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HotTagResponse.java
+END
+GetRoomsResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetRoomsResponseEntity.java
+END
+HeartBeatResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HeartBeatResponseEntity.java
+END
+CashTypeEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/CashTypeEntity.java
+END
+GetCommentListResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetCommentListResponse.java
+END
+RequestConfirmOrderResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/RequestConfirmOrderResponseEntity.java
+END
+GetOrderDelResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetOrderDelResponse.java
+END
+GetSectionResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetSectionResponseEntity.java
+END
+SubmitVerificationCodeResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/SubmitVerificationCodeResponse.java
+END
+GetVideoResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetVideoResponseEntity.java
+END
+HttpNetHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HttpNetHandler.java
+END
+GetAccountInfoResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetAccountInfoResponseEntity.java
+END
+DibbleVedioResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/DibbleVedioResponseEntity.java
+END
+LoginResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/LoginResponseEntity.java
+END
+GetOrderListResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetOrderListResponse.java
+END
+GetGoodsResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/GetGoodsResponseEntity.java
+END
+HttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HttpRequest.java
+END
+HttpResponseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/http/HttpResponseEntity.java
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service
+END
+MediaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/MediaService.java
+END
+UdpChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/UdpChannel.java
+END
+UdpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/UdpRequest.java
+END
+HttpTimeoutHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/HttpTimeoutHandler.java
+END
+AppStatusService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/service/AppStatusService.java
+END
+RealmeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/6209/realmestore_new_rmm/src/com/fengrun/realmestore/service/RealmeService.java
+END
+HttpChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/HttpChannel.java
+END
+HttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/HttpRequest.java
+END
+NetWorkProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/NetWorkProxy.java
+END
+UdpMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/UdpMessageHandler.java
+END
+HttpResponseHanlder.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/HttpResponseHanlder.java
+END
+UdpMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/UdpMessage.java
+END
+UdpTimeoutHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/service/UdpTimeoutHandler.java
+END

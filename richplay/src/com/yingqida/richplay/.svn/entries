@@ -1,0 +1,147 @@
+10
+
+dir
+5762
+https://win-k1aukdt52ms:8443/svn/RealMe_Client_Android/realmestore_new_rmm/src/com/fengrun/realmestore
+https://win-k1aukdt52ms:8443/svn/RealMe_Client_Android
+
+
+
+2013-04-01T13:51:41.659297Z
+5762
+hanliangru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0f964614-7c75-2c45-9509-525444f0b797
+
+RealmestoreActivity.java
+file
+5954
+
+
+
+2013-04-11T07:02:12.203125Z
+76c667c249dc1621f9f2bcc2410fb505
+2013-04-11T10:12:58.045891Z
+5954
+hanliangru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4748
+
+animation
+dir
+
+adapter
+dir
+
+mail
+dir
+
+widget
+dir
+
+module
+dir
+
+RealmeStoreApplication.java
+file
+6439
+
+
+
+2013-04-28T01:56:37.562500Z
+34cdd79823d5ace58c21dbdd5d3df7d2
+2013-05-10T02:29:43.711263Z
+6439
+hanliangru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10405
+
+net
+dir
+
+udp
+dir
+
+kefu
+dir
+
+activity
+dir
+
+logic
+dir
+
+service
+dir
+
+database
+dir
+
+baseapi
+dir
+
+video
+dir
+
+packet
+dir
+
+setting
+dir
+
+util
+dir
+

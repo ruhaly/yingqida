@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file
+END
+ZipUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/ZipUtil.java
+END
+UploadResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/UploadResult.java
+END
+SoundUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/SoundUtil.java
+END
+UploadProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/UploadProgress.java
+END
+FileUpLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/FileUpLoader.java
+END
+FileLogic.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/FileLogic.java
+END
+UploadData.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/UploadData.java
+END
+ZlibUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/baseapi/file/ZlibUtil.java
+END

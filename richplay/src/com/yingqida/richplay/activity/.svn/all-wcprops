@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity
+END
+ChannelParentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ChannelParentActivity.java
+END
+LoginSuperActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/LoginSuperActivity.java
+END
+AccountListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5858/realmestore_new_rmm/src/com/fengrun/realmestore/activity/AccountListActivity.java
+END
+EditAddressActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/EditAddressActivity.java
+END
+AddAddressActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/activity/AddAddressActivity.java
+END
+CommentListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/CommentListActivity.java
+END
+VipActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/VipActivity.java
+END
+OrderDelActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/OrderDelActivity.java
+END
+PrincipleInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/PrincipleInfoActivity.java
+END
+ForgetPWDActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ForgetPWDActivity.java
+END
+OrderSuccessActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RealMe_Client_Android/!svn/ver/5870/realmestore_new_rmm/src/com/fengrun/realmestore/activity/OrderSuccessActivity.java
+END
+MyGoodsCommentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/MyGoodsCommentActivity.java
+END
+WheelActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/WheelActivity.java
+END
+PlayActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/5960/realmestore_new_rmm/src/com/fengrun/realmestore/activity/PlayActivity.java
+END
+ChannelActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/6439/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ChannelActivity.java
+END
+AboutMLGActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/AboutMLGActivity.java
+END
+RegisterActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/activity/RegisterActivity.java
+END
+SuccessActiviy.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/SuccessActiviy.java
+END
+RegisterLogic.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/activity/RegisterLogic.java
+END
+PrincipleActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/PrincipleActivity.java
+END
+HomeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/6439/realmestore_new_rmm/src/com/fengrun/realmestore/activity/HomeActivity.java
+END
+OrderConfirmActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/RealMe_Client_Android/!svn/ver/5921/realmestore_new_rmm/src/com/fengrun/realmestore/activity/OrderConfirmActivity.java
+END
+KefuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/KefuActivity.java
+END
+ReturnGuideActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ReturnGuideActivity.java
+END
+GoodsEvaluateActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/GoodsEvaluateActivity.java
+END
+PlayRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/activity/PlayRecordActivity.java
+END
+RealmePlayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RealMe_Client_Android/!svn/ver/5816/realmestore_new_rmm/src/com/fengrun/realmestore/activity/RealmePlayer.java
+END
+OrderListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/RealMe_Client_Android/!svn/ver/5954/realmestore_new_rmm/src/com/fengrun/realmestore/activity/OrderListActivity.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/6439/realmestore_new_rmm/src/com/fengrun/realmestore/activity/LoginActivity.java
+END
+OrderActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/OrderActivity.java
+END
+GoodsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/GoodsActivity.java
+END
+ClauseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ClauseActivity.java
+END
+LoadingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RealMe_Client_Android/!svn/ver/6213/realmestore_new_rmm/src/com/fengrun/realmestore/activity/LoadingActivity.java
+END
+ShowDeliver.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RealMe_Client_Android/!svn/ver/5723/realmestore_new_rmm/src/com/fengrun/realmestore/activity/ShowDeliver.java
+END
+AddressManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/RealMe_Client_Android/!svn/ver/6439/realmestore_new_rmm/src/com/fengrun/realmestore/activity/AddressManagerActivity.java
+END
+AddressListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/RealMe_Client_Android/!svn/ver/5783/realmestore_new_rmm/src/com/fengrun/realmestore/activity/AddressListActivity.java
+END
