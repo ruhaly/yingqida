@@ -11,12 +11,10 @@ import com.yingqida.richplay.entity.WallPicItem;
 /**
  * 
  * 
- * WallPicDaoImpl
- * user-ruhaly
- * 2013-7-18 下午4:03:49
+ * WallPicDaoImpl user-ruhaly 2013-7-18 下午4:03:49
  * 
  * @version 1.0.0
- *
+ * 
  */
 public class WallPicDaoImpl {
 

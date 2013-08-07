@@ -33,7 +33,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.yingqida.richplay.BuildConfig;
-import com.yingqida.richplay.RichPalyActivity;
 import com.yingqida.richplay.baseapi.common.RichResource;
 
 /**
@@ -98,7 +97,7 @@ public class ImageFetcher extends ImageResizer {
 	 *            The data to load the bitmap, in this case, a regular http URL
 	 * @return The downloaded and resized bitmap
 	 */
-	private Bitmap processBitmap(String data) {
+	private Bitmap processBitmap(String data, int width) {
 		if (BuildConfig.DEBUG) {
 			// Log.d(TAG, "processBitmap - " + data);
 		}
@@ -108,7 +107,7 @@ public class ImageFetcher extends ImageResizer {
 
 		if (f != null) {
 			// Return a sampled down version
-			return decodeSampledBitmapFromFile(f.toString(), mImageWidth,
+			return decodeSampledBitmapFromFile(f.toString(), width,
 					mImageHeight);
 		}
 
@@ -116,8 +115,8 @@ public class ImageFetcher extends ImageResizer {
 	}
 
 	@Override
-	protected Bitmap processBitmap(Object data) {
-		return processBitmap(String.valueOf(data));
+	protected Bitmap processBitmap(Object data, int width) {
+		return processBitmap(String.valueOf(data), width);
 	}
 
 	/**

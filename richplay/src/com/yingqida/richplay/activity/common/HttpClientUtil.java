@@ -91,6 +91,6 @@ public class HttpClientUtil {
 	public static void main(String args[]) throws Exception {
 		String urlString = "http://www.webxml.com.cn/WebServices/IpAddressSearchWebService.asmx/getGeoIPContext";
 		String value = HttpClientUtil.get(urlString, "utf-8");
-//		System.out.println(value);
+		// System.out.println(value);
 	}
 }

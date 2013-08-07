@@ -194,9 +194,9 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 					getScreenW() / 2, LinearLayout.LayoutParams.WRAP_CONTENT));
 			holder.contentView.setText(duitangInfo.getMsg());
 			mImageFetcher.loadImage(duitangInfo.getIsrc(), holder.imageView,
-					getScreenW() / 2);
+					getScreenW() / 2, false);
 			mImageFetcher.loadImage(duitangInfo.getHeader(), holder.imageView2,
-					HEADWIDTH);
+					HEADWIDTH, false);
 			return convertView;
 		}
 
@@ -290,8 +290,9 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 		return convertView;
 
 	}
+
 	public void initList2() {
-		for (int i = 19; i >0; i--) {
+		for (int i = 19; i > 0; i--) {
 			DuitangInfo di = new DuitangInfo();
 			di.setIsrc(imageThumbUrls[i]);
 			di.setName("ruhaly" + i);
@@ -300,6 +301,7 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 			mInfos.add(di);
 		}
 	}
+
 	@Override
 	public void updateView() {
 		mInfos.clear();
@@ -312,7 +314,7 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

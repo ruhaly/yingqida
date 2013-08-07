@@ -1,7 +1,6 @@
 package com.yingqida.richplay.activity;
 
 import com.yingqida.richplay.R;
-import com.yingqida.richplay.R.layout;
 import com.yingqida.richplay.activity.common.SuperActivity;
 
 public class UserEditActivity extends SuperActivity {

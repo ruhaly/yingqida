@@ -67,8 +67,9 @@ public class LocManager {
 
 			@Override
 			public void onLocationChanged(Location location) {
-				AppLog.out(MY_TAG, location.getProvider() + "|==|"
-						+ location.toString(), AppLog.LEVEL_INFO);
+				AppLog.out(MY_TAG,
+						location.getProvider() + "|==|" + location.toString(),
+						AppLog.LEVEL_INFO);
 				locations.put(location.getProvider(), location);
 			}
 		};

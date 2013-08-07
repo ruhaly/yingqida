@@ -112,12 +112,10 @@ public class NetWorkProxy implements HttpAction, UdpMessageHandler {
 				boolean noConnection = intent.getBooleanExtra(
 						ConnectivityManager.EXTRA_NO_CONNECTIVITY, false);
 				if (noConnection) {
-					AppLog.out(MY_TAG, "net broken",
-							AppLog.LEVEL_INFO);
+					AppLog.out(MY_TAG, "net broken", AppLog.LEVEL_INFO);
 					handleNetBroken();
 				} else {
-					AppLog.out(MY_TAG, "net connected",
-							AppLog.LEVEL_INFO);
+					AppLog.out(MY_TAG, "net connected", AppLog.LEVEL_INFO);
 					handleNetConnected();
 				}
 			}

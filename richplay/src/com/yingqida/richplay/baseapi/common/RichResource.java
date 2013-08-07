@@ -26,4 +26,3 @@ public class RichResource {
 	public static final String ACTION_BACKGROUND = "com.richplay.action_background";
 	public static final int TIMEOUT = 20000;
 }
-	

@@ -14,7 +14,6 @@ import com.yingqida.richplay.baseapi.ImageUtil;
 import com.yingqida.richplay.baseapi.common.DownloadEntity;
 import com.yingqida.richplay.baseapi.common.RequestId;
 import com.yingqida.richplay.baseapi.common.UnSyncImageLoader;
-import com.yingqida.richplay.baseapi.common.UnSyncImageLoader.DownloadImagesTask;
 import com.yingqida.richplay.baseapi.common.UnSyncImageLoader.ICallBack;
 import com.yingqida.richplay.baseapi.http.HttpRequest;
 import com.yingqida.richplay.entity.WallPicInfo;

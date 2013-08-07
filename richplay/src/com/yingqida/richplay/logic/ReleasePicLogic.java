@@ -1,6 +1,5 @@
 package com.yingqida.richplay.logic;
 
-
 public class ReleasePicLogic {
 
 	private static ReleasePicLogic ins = null;

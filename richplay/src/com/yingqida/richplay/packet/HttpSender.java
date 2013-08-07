@@ -49,7 +49,7 @@ public class HttpSender implements HttpAction {
 		proxy.sendHttpRequest(ACTION_WALL_PIC_INFO, request,
 				HttpChannel.METHOD_POST, false);
 	}
-	
+
 	public static void requestWallPic(NetWorkProxy proxy, String session,
 			HttpRequest request, String uid, int curp, int pnum) {
 		if (null == proxy) {

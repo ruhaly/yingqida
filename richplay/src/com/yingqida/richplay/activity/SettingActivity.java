@@ -16,7 +16,7 @@ public class SettingActivity extends SuperActivity {
 	@Override
 	public void initLayout() {
 		setContentView(R.layout.setting_layout);
-		
+
 	}
 
 	@Override
@@ -24,11 +24,10 @@ public class SettingActivity extends SuperActivity {
 
 	}
 
-
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-			
+
 		}
 	}
 

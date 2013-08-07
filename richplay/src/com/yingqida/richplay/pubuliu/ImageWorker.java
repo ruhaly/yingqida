@@ -29,10 +29,8 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.yingqida.richplay.BuildConfig;
-import com.yingqida.richplay.activity.WallPicActivityOld;
 
 /**
  * This class wraps up completing some arbitrary long running work when loading
@@ -68,23 +66,37 @@ public abstract class ImageWorker {
 	 *            The URL of the image to download.
 	 * @param imageView
 	 *            The ImageView to bind the downloaded image to.
+	 * @param isFromDisk
+	 *            TODO
 	 */
-	public void loadImage(Object data, ImageView imageView, int width) {
+	public void loadImage(Object data, ImageView imageView, int width,
+			boolean isFromDisk) {
 		Bitmap bitmap = null;
+		if (isFromDisk) {
 
-		if (mImageCache != null) {
-			bitmap = mImageCache.getBitmapFromMemCache(String.valueOf(data));
-		}
-
-		if (bitmap != null) {
-			// Bitmap found in memory cache
-			imageView.setImageBitmap(zoomImg(bitmap, width));
-		} else if (cancelPotentialWork(data, imageView)) {
 			final BitmapWorkerTask task = new BitmapWorkerTask(imageView);
 			final AsyncDrawable asyncDrawable = new AsyncDrawable(
 					mContext.getResources(), mLoadingBitmap, task);
 			imageView.setImageDrawable(asyncDrawable);
 			task.execute(data, width);
+
+		} else {
+
+			if (mImageCache != null) {
+				bitmap = mImageCache
+						.getBitmapFromMemCache(String.valueOf(data));
+			}
+
+			if (bitmap != null) {
+				// Bitmap found in memory cache
+				imageView.setImageBitmap(zoomImg(bitmap, width));
+			} else if (cancelPotentialWork(data, imageView)) {
+				final BitmapWorkerTask task = new BitmapWorkerTask(imageView);
+				final AsyncDrawable asyncDrawable = new AsyncDrawable(
+						mContext.getResources(), mLoadingBitmap, task);
+				imageView.setImageDrawable(asyncDrawable);
+				task.execute(data, width);
+			}
 		}
 	}
 
@@ -130,7 +142,7 @@ public abstract class ImageWorker {
 			// process method (as implemented by a subclass)
 			if (bitmap == null && !isCancelled()
 					&& getAttachedImageView() != null && !mExitTasksEarly) {
-				bitmap = processBitmap(params[0]);
+				bitmap = processBitmap(params[0], width);
 			}
 
 			// If the bitmap was processed and the image cache is available,
@@ -241,7 +253,7 @@ public abstract class ImageWorker {
 	 */
 	public void loadImage(int num, ImageView imageView, int width) {
 		if (mImageWorkerAdapter != null) {
-			loadImage(mImageWorkerAdapter.getItem(num), imageView, width);
+			loadImage(mImageWorkerAdapter.getItem(num), imageView, width, false);
 		} else {
 			throw new NullPointerException(
 					"Data not set, must call setAdapter() first.");
@@ -307,7 +319,7 @@ public abstract class ImageWorker {
 	 *            {@link ImageWorker#loadImage(Object, ImageView)}
 	 * @return The processed bitmap
 	 */
-	protected abstract Bitmap processBitmap(Object data);
+	protected abstract Bitmap processBitmap(Object data, int width);
 
 	public static void cancelWork(ImageView imageView) {
 		final BitmapWorkerTask bitmapWorkerTask = getBitmapWorkerTask(imageView);

@@ -16,8 +16,6 @@
 
 package com.yingqida.richplay.pubuliu;
 
-import com.yingqida.richplay.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
@@ -25,6 +23,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.View;
+
+import com.yingqida.richplay.R;
 
 /**
  * @author huewu.ynag

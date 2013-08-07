@@ -59,11 +59,12 @@ public class ZipUtil {
 				if (hello[i] != uncompr[i])
 					break;
 			if (i == j) {
-//				System.out.println("inflate(): " + new String(uncompr, 0, j));
+				// System.out.println("inflate(): " + new String(uncompr, 0,
+				// j));
 				return;
 			}
 		} else {
-//			System.out.println("bad inflate");
+			// System.out.println("bad inflate");
 		}
 	}
 
@@ -114,7 +115,7 @@ public class ZipUtil {
 		}
 		err = inflater.end();
 		inflater.getTotalOut();
-//		System.out.println("zip out length " + inflater.getTotalOut());
+		// System.out.println("zip out length " + inflater.getTotalOut());
 		return uncompr;
 	}
 }

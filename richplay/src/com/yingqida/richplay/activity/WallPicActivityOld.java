@@ -89,7 +89,7 @@ public class WallPicActivityOld extends SuperActivity {
 			holder.img_pic.setLayoutParams(new LinearLayout.LayoutParams(
 					LinearLayout.LayoutParams.WRAP_CONTENT, 300));
 			mImageFetcher.loadImage(getItem(position).getIsrc(),
-					holder.img_pic, getScreenW());
+					holder.img_pic, getScreenW(), false);
 			holder.tv_name.setText(getItem(position).getMsg());
 			holder.tv_msg.setText(getItem(position).getMsg());
 			return convertView;

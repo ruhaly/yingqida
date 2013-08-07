@@ -19,8 +19,6 @@ package com.yingqida.richplay.pubuliu;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.yingqida.richplay.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -43,6 +41,8 @@ import android.view.ViewTreeObserver;
 import android.widget.Adapter;
 import android.widget.ListAdapter;
 import android.widget.Scroller;
+
+import com.yingqida.richplay.R;
 
 /**
  * Base class that can be used to implement virtualized lists of items. A list

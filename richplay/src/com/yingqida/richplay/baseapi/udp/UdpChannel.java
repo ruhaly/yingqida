@@ -15,7 +15,6 @@ import java.util.TimerTask;
 import android.content.Context;
 
 import com.yingqida.richplay.baseapi.AppLog;
-import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.net.ReturnCode;
 import com.yingqida.richplay.packet.UdpCommond;
 

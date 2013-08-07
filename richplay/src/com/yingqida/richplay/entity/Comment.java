@@ -11,10 +11,9 @@ public class Comment {
 	private String reName = "";
 	private String uurl = "";
 	private String time = "";
-	//评论内容
-	private String cmsg="";
-	
-	
+	// 评论内容
+	private String cmsg = "";
+
 	public String getCmsg() {
 		return cmsg;
 	}

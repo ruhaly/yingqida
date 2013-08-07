@@ -50,7 +50,7 @@ public class AppStatusService extends Service {
 		activityManager = (ActivityManager) this
 				.getSystemService(Context.ACTIVITY_SERVICE);
 		packageName = this.getPackageName();
-//		System.out.println("启动服务");
+		// System.out.println("启动服务");
 
 		new Thread() {
 			public void run() {
@@ -101,7 +101,7 @@ public class AppStatusService extends Service {
 	@Override
 	public void onDestroy() {
 		// TODO Auto-generated method stub
-//		System.out.println("终止服务");
+		// System.out.println("终止服务");
 		super.onDestroy();
 		cancelNotification();
 		isStop = true;
@@ -113,8 +113,8 @@ public class AppStatusService extends Service {
 		NotificationManager notificationManager = (NotificationManager) getSystemService(android.content.Context.NOTIFICATION_SERVICE);
 
 		// 定义Notification的各种属性
-		Notification notification = new Notification(R.drawable.ic_launcher, "电子商城",
-				System.currentTimeMillis());
+		Notification notification = new Notification(R.drawable.ic_launcher,
+				"电子商城", System.currentTimeMillis());
 		// 将此通知放到通知栏的"Ongoing"即"正在运行"组中
 		notification.flags |= Notification.FLAG_ONGOING_EVENT;
 		// 点击后自动清除Notification

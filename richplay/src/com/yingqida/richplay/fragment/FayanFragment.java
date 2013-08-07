@@ -200,9 +200,9 @@ public class FayanFragment extends SuperFragment implements IXListViewListener {
 					getScreenW() / 2, LinearLayout.LayoutParams.WRAP_CONTENT));
 			holder.contentView.setText(duitangInfo.getMsg());
 			mImageFetcher.loadImage(duitangInfo.getIsrc(), holder.imageView,
-					getScreenW() / 2);
+					getScreenW() / 2, false);
 			mImageFetcher.loadImage(duitangInfo.getHeader(), holder.imageView2,
-					HEADWIDTH);
+					HEADWIDTH, false);
 			return convertView;
 		}
 

@@ -39,8 +39,8 @@ public class NotificationExtend {
 				.getSystemService(android.content.Context.NOTIFICATION_SERVICE);
 
 		// ����Notification�ĸ�������
-		Notification notification = new Notification(R.drawable.ic_launcher, "�Ķ���",
-				System.currentTimeMillis());
+		Notification notification = new Notification(R.drawable.ic_launcher,
+				"�Ķ���", System.currentTimeMillis());
 		// ����֪ͨ�ŵ�֪ͨ����"Ongoing"��"��������"����
 		notification.flags |= Notification.FLAG_ONGOING_EVENT;
 		// �����ڵ����֪ͨ���е�"���֪ͨ"�󣬴�֪ͨ��������FLAG_ONGOING_EVENTһ��ʹ��

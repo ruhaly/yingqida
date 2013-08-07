@@ -121,16 +121,16 @@ public final class ViewfinderView extends View {
 					+ ((0 - linewidht) + frame.bottom), -15 + frame.right, -15
 					+ (linewidht - (linewidht - 1) + frame.bottom), paint);
 
-			
 			paint.setColor(laserColor);
 			paint.setAlpha(SCANNER_ALPHA[scannerAlpha]);
 			scannerAlpha = (scannerAlpha + 1) % SCANNER_ALPHA.length;
 			int vmiddle = frame.height() / 2 + frame.top;
-			int hmiddle=frame.width()/2+frame.left;
+			int hmiddle = frame.width() / 2 + frame.left;
 			canvas.drawRect(frame.left + 2, vmiddle - 1, frame.right - 1,
 					vmiddle + 2, paint);
-			
-			canvas.drawRect(hmiddle-1, frame.top+2, hmiddle+2, frame.bottom-1, paint);
+
+			canvas.drawRect(hmiddle - 1, frame.top + 2, hmiddle + 2,
+					frame.bottom - 1, paint);
 			Collection<ResultPoint> currentPossible = possibleResultPoints;
 			Collection<ResultPoint> currentLast = lastPossibleResultPoints;
 			if (currentPossible.isEmpty()) {

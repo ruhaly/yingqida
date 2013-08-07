@@ -20,7 +20,6 @@ import android.widget.TabHost;
 
 import com.yingqida.richplay.activity.PCenterActivity;
 import com.yingqida.richplay.activity.SearchActivity;
-import com.yingqida.richplay.activity.WallPicActivityOld;
 import com.yingqida.richplay.activity.WallPicActivity;
 import com.yingqida.richplay.activity.common.TabSuperActivity;
 import com.yingqida.richplay.baseapi.AppLog;

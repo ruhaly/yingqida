@@ -18,8 +18,6 @@ package com.yingqida.richplay.pubuliu;
 
 import java.util.ArrayList;
 
-import com.yingqida.richplay.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -35,6 +33,8 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.ListAdapter;
 import android.widget.WrapperListAdapter;
+
+import com.yingqida.richplay.R;
 
 /*
  * Implementation Notes:

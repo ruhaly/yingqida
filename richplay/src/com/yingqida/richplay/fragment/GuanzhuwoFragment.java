@@ -116,6 +116,6 @@ public class GuanzhuwoFragment extends SuperFragment {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

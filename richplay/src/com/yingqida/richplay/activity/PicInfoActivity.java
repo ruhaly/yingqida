@@ -3,14 +3,17 @@ package com.yingqida.richplay.activity;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.paintpad.activity.Main;
 import com.yingqida.richplay.R;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.entity.Comment;
@@ -23,6 +26,8 @@ public class PicInfoActivity extends SuperActivity {
 	Adapter adapter;
 
 	private List<Comment> list = new ArrayList<Comment>();
+
+	private ImageView img;
 
 	@Override
 	public void initData() {
@@ -38,7 +43,16 @@ public class PicInfoActivity extends SuperActivity {
 	public void initLayout() {
 		setContentView(R.layout.picinfo_layout);
 		listComm = (MyListView) findViewById(R.id.listComm);
+		img = (ImageView) findViewById(R.id.img);
+		img.setOnClickListener(new View.OnClickListener() {
 
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getBaseContext(), Main.class));
+			}
+		});
+		mImageFetcher.loadImage(getIntent().getStringExtra("PURL"), img,
+				getScreenW(), true);
 		if (null == adapter) {
 			adapter = new Adapter();
 			listComm.setAdapter(adapter);

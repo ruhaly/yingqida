@@ -56,7 +56,8 @@ public class WoguanzhuFragment extends SuperFragment {
 		fragmentList.add(fragment_yuansu);
 		fragmentList.add(fragment_yonghu);
 		if (null == adapter) {
-			adapter = new MyFragmentPagerAdapter(getChildFragmentManager(), fragmentList);
+			adapter = new MyFragmentPagerAdapter(getChildFragmentManager(),
+					fragmentList);
 			vPager.setAdapter(adapter);
 		} else {
 			adapter.notifyDataSetChanged();

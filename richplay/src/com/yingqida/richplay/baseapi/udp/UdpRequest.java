@@ -32,8 +32,8 @@ public class UdpRequest {
 
 	public int spId;
 
-	public UdpRequest(UdpMessageHandler rspHandler,
-			UdpNetHandler netHandler, String ip, int port, String key) {
+	public UdpRequest(UdpMessageHandler rspHandler, UdpNetHandler netHandler,
+			String ip, int port, String key) {
 		this.responsed = false;
 		this.rspHandler = rspHandler;
 		this.netHandler = netHandler;

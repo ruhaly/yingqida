@@ -164,6 +164,7 @@ public class ImageCache {
 	}
 
 	public void addBitmapToCache(String data, Bitmap bitmap) {
+		System.out.println(bitmap.getWidth() + bitmap.getHeight());
 		if (data == null || bitmap == null) {
 			return;
 		}
@@ -206,9 +207,9 @@ public class ImageCache {
 	 *            Unique identifier for which item to get
 	 * @return The bitmap if found in cache, null otherwise
 	 */
-	public Bitmap getBitmapFromDiskCache(String data,int width) {
+	public Bitmap getBitmapFromDiskCache(String data, int width) {
 		if (mDiskCache != null) {
-			return mDiskCache.get(data,width);
+			return mDiskCache.get(data, width);
 		}
 		return null;
 	}

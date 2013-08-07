@@ -28,7 +28,6 @@ import android.graphics.Rect;
 import android.util.Log;
 
 import com.yingqida.richplay.BuildConfig;
-import com.yingqida.richplay.baseapi.ImageUtil;
 
 /**
  * A simple subclass of {@link ImageWorker} that resizes images from resources
@@ -93,17 +92,17 @@ public class ImageResizer extends ImageWorker {
 	 * @param resId
 	 * @return
 	 */
-	private Bitmap processBitmap(int resId) {
+	private Bitmap processBitmap(int resId, int width) {
 		if (BuildConfig.DEBUG) {
 			Log.d(TAG, "processBitmap - " + resId);
 		}
 		return decodeSampledBitmapFromResource(mContext.getResources(), resId,
-				mImageWidth, mImageHeight);
+				width, mImageHeight);
 	}
 
 	@Override
-	protected Bitmap processBitmap(Object data) {
-		return processBitmap(Integer.parseInt(String.valueOf(data)));
+	protected Bitmap processBitmap(Object data, int width) {
+		return processBitmap(Integer.parseInt(String.valueOf(data)), width);
 	}
 
 	/**
@@ -129,7 +128,8 @@ public class ImageResizer extends ImageWorker {
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds = true;
 		BitmapFactory.decodeResource(res, resId, options);
-
+		reqHeight = Math.round(reqWidth * (float) reqHeight
+				/ (float) options.outWidth);
 		// Calculate inSampleSize
 		options.inSampleSize = calculateInSampleSize(options, reqWidth,
 				reqHeight);
@@ -168,7 +168,8 @@ public class ImageResizer extends ImageWorker {
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds = true;
 		BitmapFactory.decodeFile(filename, options);
-
+		reqHeight = Math.round(reqWidth * (float) reqHeight
+				/ (float) options.outWidth);
 		// Calculate inSampleSize
 		options.inSampleSize = calculateInSampleSize(options, reqWidth,
 				reqHeight);
@@ -205,16 +206,15 @@ public class ImageResizer extends ImageWorker {
 		final int height = options.outHeight;
 		final int width = options.outWidth;
 		int inSampleSize = 1;
-		if (height > reqHeight) {
-			// if (width > reqWidth) {
+		// if (height > reqHeight) {
+		if (width > reqWidth) {
 			inSampleSize = Math.round((float) width / (float) reqWidth);
-			if (width > height) {
-				inSampleSize = Math.round((float) height / (float) reqHeight);
-			}
-
-			else {
-				inSampleSize = Math.round((float) width / (float) reqWidth);
-			}
+			// if (width > height) {
+			// inSampleSize = Math.round((float) height / (float) reqHeight);
+			// }
+			//
+			// else {
+			inSampleSize = Math.round((float) width / (float) reqWidth);
 
 			// This offers some additional logic in case the image has a strange
 			// aspect ratio. For example, a panorama may have a much larger

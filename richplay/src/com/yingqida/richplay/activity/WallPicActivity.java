@@ -19,18 +19,14 @@ import android.widget.TextView;
 
 import com.yingqida.richplay.R;
 import com.yingqida.richplay.activity.common.SuperActivity;
-import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.pubuliu.DuitangInfo;
-import com.yingqida.richplay.pubuliu.ImageCache;
-import com.yingqida.richplay.pubuliu.ImageFetcher;
 import com.yingqida.richplay.pubuliu.PLA_AdapterView;
-import com.yingqida.richplay.pubuliu.ScaleImageView;
 import com.yingqida.richplay.pubuliu.XListView;
 import com.yingqida.richplay.pubuliu.XListView.IXListViewListener;
 
 public class WallPicActivity extends SuperActivity implements
 		IXListViewListener {
-	private ImageFetcher mImageFetcher;
+
 	private XListView mAdapterView = null;
 	private StaggeredAdapter mAdapter = null;
 	private int currentPage = 0;
@@ -171,9 +167,9 @@ public class WallPicActivity extends SuperActivity implements
 					getScreenW() / 2, LinearLayout.LayoutParams.WRAP_CONTENT));
 			holder.contentView.setText(duitangInfo.getMsg());
 			mImageFetcher.loadImage(duitangInfo.getIsrc(), holder.imageView,
-					getScreenW() / 2);
+					getScreenW() / 2, false);
 			mImageFetcher.loadImage(duitangInfo.getHeader(), holder.imageView2,
-					HEADWIDTH);
+					HEADWIDTH, false);
 			return convertView;
 		}
 
@@ -190,7 +186,7 @@ public class WallPicActivity extends SuperActivity implements
 		}
 
 		@Override
-		public Object getItem(int arg0) {
+		public DuitangInfo getItem(int arg0) {
 			return mInfos.get(arg0);
 		}
 
@@ -305,11 +301,6 @@ public class WallPicActivity extends SuperActivity implements
 
 		mAdapter = new StaggeredAdapter();
 
-		mImageFetcher = new ImageFetcher(this, 240);
-		mImageFetcher.setImageCache(new ImageCache(getBaseContext(),
-				RichResource.PIC_PATH));
-		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
-		mImageFetcher.setExitTasksEarly(false);
 		mAdapterView.setAdapter(mAdapter);
 		AddItemToContainer(currentPage, 2);
 		mAdapterView
@@ -317,9 +308,19 @@ public class WallPicActivity extends SuperActivity implements
 
 					@Override
 					public void onItemClick(PLA_AdapterView<?> parent,
-							View view, int position, long id) {
+							View view, final int position, final long id) {
+						runOnUiThread(new Runnable() {
+
+							@Override
+							public void run() {
+								System.out.println("position:" + position
+										+ "id:" + id);
+							}
+						});
 						startActivity(new Intent(getBaseContext(),
-								PicInfoActivity.class));
+								PicInfoActivity.class).putExtra("PURL",
+								mAdapter.getItem(Integer.valueOf(id + ""))
+										.getIsrc()));
 					}
 				});
 	}

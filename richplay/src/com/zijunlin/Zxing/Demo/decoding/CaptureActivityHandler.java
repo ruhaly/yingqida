@@ -16,14 +16,8 @@
 
 package com.zijunlin.Zxing.Demo.decoding;
 
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.Result;
-import com.yingqida.richplay.HomeActivity;
-import com.yingqida.richplay.R;
-import com.yingqida.richplay.baseapi.ActivityResultCode;
-import com.zijunlin.Zxing.Demo.CaptureActivity;
-import com.zijunlin.Zxing.Demo.camera.CameraManager;
-import com.zijunlin.Zxing.Demo.view.*;
+import java.util.Vector;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -32,7 +26,13 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import java.util.Vector;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.Result;
+import com.yingqida.richplay.R;
+import com.yingqida.richplay.baseapi.ActivityResultCode;
+import com.zijunlin.Zxing.Demo.CaptureActivity;
+import com.zijunlin.Zxing.Demo.camera.CameraManager;
+import com.zijunlin.Zxing.Demo.view.ViewfinderResultPointCallback;
 
 /**
  * This class handles all the messaging which comprises the state machine for
@@ -90,7 +90,7 @@ public final class CaptureActivityHandler extends Handler implements
 			Bundle bundle = message.getData();
 			Bitmap barcode = bundle == null ? null : (Bitmap) bundle
 					.getParcelable(DecodeThread.BARCODE_BITMAP);
-//			String str_result = ((Result) message.obj).getText();
+			// String str_result = ((Result) message.obj).getText();
 			activity.handleDecode((Result) message.obj, barcode);
 			break;
 		case R.id.decode_failed:

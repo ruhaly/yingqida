@@ -3,8 +3,8 @@ package com.yingqida.richplay.baseapi.common;
 import java.io.UnsupportedEncodingException;
 
 /**
- * 类名称：Base64 作者：  创建时间：2010-8-13 类描述：base64编码 版权声明 : Copyright (C)
- * 2008-2010 华为技术有限公司(Huawei Tech.Co.,Ltd) 修改时间：
+ * 类名称：Base64 作者： 创建时间：2010-8-13 类描述：base64编码 版权声明 : Copyright (C) 2008-2010
+ * 华为技术有限公司(Huawei Tech.Co.,Ltd) 修改时间：
  * 
  */
 public final class Base64 {

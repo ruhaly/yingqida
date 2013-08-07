@@ -47,7 +47,8 @@ public abstract class WheelActivity extends SuperActivity {
 	 * @param curItem
 	 * @param title
 	 * @param click
-	 * @param hascancel TODO
+	 * @param hascancel
+	 *            TODO
 	 */
 	public void showSingleWheel(ArrayWheelAdapter<String> adapter, int curItem,
 			String title, OnClickListener click, boolean hascancel) {
@@ -56,11 +57,13 @@ public abstract class WheelActivity extends SuperActivity {
 		wheel1 = (WheelView) singleWheel.findViewById(R.id.wheel);
 		wheel1.setAdapter(adapter);
 		wheel1.setCurrentItem(curItem);
-		
-		if(hascancel){
-			showAlertDialog(0, title, null, singleWheel, click, DEFAULT_BTN, null, true);
-		}else{
-			showAlertDialog(0, title, null, singleWheel, click, null, null, false);
+
+		if (hascancel) {
+			showAlertDialog(0, title, null, singleWheel, click, DEFAULT_BTN,
+					null, true);
+		} else {
+			showAlertDialog(0, title, null, singleWheel, click, null, null,
+					false);
 		}
 	}
 
@@ -74,7 +77,8 @@ public abstract class WheelActivity extends SuperActivity {
 	 * @param wheelChange
 	 * @param title
 	 * @param click
-	 * @param hascancel TODO
+	 * @param hascancel
+	 *            TODO
 	 */
 	public void showDoubleWheel(ArrayWheelAdapter<String> adapter, int curItem,
 			ArrayWheelAdapter<String> adapter2, int curItem2,
@@ -90,10 +94,12 @@ public abstract class WheelActivity extends SuperActivity {
 		wheel1.setAdapter(adapter);
 		wheel1.setCurrentItem(curItem);
 		wheel1.addChangingListener(wheelChange);
-		if(hascancel){
-			showAlertDialog(0, title, null, doubleWheel, click, DEFAULT_BTN, null, true);
-		}else{
-			showAlertDialog(0, title, null, doubleWheel, click, null, null, false);
+		if (hascancel) {
+			showAlertDialog(0, title, null, doubleWheel, click, DEFAULT_BTN,
+					null, true);
+		} else {
+			showAlertDialog(0, title, null, doubleWheel, click, null, null,
+					false);
 		}
 	}
 
@@ -135,6 +141,7 @@ public abstract class WheelActivity extends SuperActivity {
 			wheel1.addChangingListener(wheelChange);
 		}
 
-		showAlertDialog(0, title, null, threeWheel, click, DEFAULT_BTN, null, true);
+		showAlertDialog(0, title, null, threeWheel, click, DEFAULT_BTN, null,
+				true);
 	}
 }

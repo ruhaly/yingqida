@@ -83,7 +83,7 @@ public class NotificationActivity extends FragmentActivity {
 		}
 		mNotificationManager.cancelAll();
 		mNotificationManager.notify(id, notification);
-//		mNotificationManager.cancel(id);
+		// mNotificationManager.cancel(id);
 	}
 
 	/**

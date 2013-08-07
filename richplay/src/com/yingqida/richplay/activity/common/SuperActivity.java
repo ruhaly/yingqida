@@ -40,6 +40,8 @@ import com.yingqida.richplay.baseapi.common.RealmeUtil;
 import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.baseapi.http.HttpResponseHanlder;
 import com.yingqida.richplay.baseapi.http.HttpTimeoutHandler;
+import com.yingqida.richplay.pubuliu.ImageCache;
+import com.yingqida.richplay.pubuliu.ImageFetcher;
 import com.yingqida.richplay.service.NetWorkProxy;
 
 public abstract class SuperActivity extends HandleActivity implements
@@ -69,6 +71,7 @@ public abstract class SuperActivity extends HandleActivity implements
 
 	// 是否清除播放界面的数据
 	public static boolean isClearDate = false;
+	public ImageFetcher mImageFetcher;
 
 	public SuperActivity() {
 	}
@@ -189,7 +192,13 @@ public abstract class SuperActivity extends HandleActivity implements
 	protected void onCreate(Bundle paramBundle) {
 		super.onCreate(paramBundle);
 		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+
 		initData();
+		mImageFetcher = new ImageFetcher(this, 240);
+		mImageFetcher.setImageCache(new ImageCache(getBaseContext(),
+				RichResource.PIC_PATH));
+		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
+		mImageFetcher.setExitTasksEarly(false);
 		initLayout();
 		TAG = this.getClass().getName();
 		ActivityStack.getIns().pushActivity(this);
