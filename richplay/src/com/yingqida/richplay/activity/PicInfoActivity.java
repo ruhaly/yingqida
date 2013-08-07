@@ -17,6 +17,8 @@ import com.paintpad.activity.Main;
 import com.yingqida.richplay.R;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.entity.Comment;
+import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 import com.yingqida.richplay.widget.MyListView;
 
 public class PicInfoActivity extends SuperActivity {
@@ -28,6 +30,7 @@ public class PicInfoActivity extends SuperActivity {
 	private List<Comment> list = new ArrayList<Comment>();
 
 	private ImageView img;
+	public ImageFetcher mImageFetcher;
 
 	@Override
 	public void initData() {
@@ -39,20 +42,62 @@ public class PicInfoActivity extends SuperActivity {
 		}
 	}
 
+	private ICallBack callback = new ICallBack() {
+
+		@Override
+		public void invoke(final String name, int code) {
+			if (200 == code) {
+				runOnUiThread(new Runnable() {
+
+					@Override
+					public void run() {
+						showToast("success");
+						updateView();
+					}
+				});
+			}
+		}
+	};
+
+	public void updateView() {
+		img.setOnLongClickListener(new View.OnLongClickListener() {
+
+			@Override
+			public boolean onLongClick(View v) {
+
+				startActivity(new Intent(getBaseContext(), Main.class)
+						.putExtra("PURL", purl));
+				showToast("setOnLongClickListener");
+				return false;
+			}
+		});
+		img.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+
+				startActivity(new Intent(getBaseContext(), Main.class)
+						.putExtra("PURL", purl));
+			}
+		});
+	}
+
+	String purl = "";
+
 	@Override
 	public void initLayout() {
 		setContentView(R.layout.picinfo_layout);
+		purl = getIntent().getStringExtra("PURL");
 		listComm = (MyListView) findViewById(R.id.listComm);
 		img = (ImageView) findViewById(R.id.img);
 		img.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(getBaseContext(), Main.class));
 			}
 		});
-		mImageFetcher.loadImage(getIntent().getStringExtra("PURL"), img,
-				getScreenW(), true);
+		mImageFetcher = initFetcher(mImageFetcher, callback);
+		mImageFetcher.loadImage(purl, img, getScreenW(), true);
 		if (null == adapter) {
 			adapter = new Adapter();
 			listComm.setAdapter(adapter);

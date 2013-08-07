@@ -18,6 +18,7 @@ import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.pubuliu.DuitangInfo;
 import com.yingqida.richplay.pubuliu.ImageCache;
 import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 
 public class WallPicActivityOld extends SuperActivity {
 	private List<DuitangInfo> mInfos = new ArrayList<DuitangInfo>();
@@ -42,7 +43,13 @@ public class WallPicActivityOld extends SuperActivity {
 	public void initLayout() {
 
 		setContentView(R.layout.wall_pic_layout);
-		mImageFetcher = new ImageFetcher(this, getScreenW());
+		mImageFetcher = new ImageFetcher(this, getScreenW(), new ICallBack() {
+
+			@Override
+			public void invoke(String name, int code) {
+
+			}
+		});
 		mImageFetcher.setImageCache(new ImageCache(getBaseContext(),
 				RichResource.PIC_PATH));
 		mImageFetcher.setLoadingImage(R.drawable.list_item_bg);

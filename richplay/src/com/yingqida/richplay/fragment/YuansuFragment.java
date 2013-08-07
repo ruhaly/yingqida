@@ -24,6 +24,7 @@ import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.pubuliu.DuitangInfo;
 import com.yingqida.richplay.pubuliu.ImageCache;
 import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 import com.yingqida.richplay.pubuliu.PLA_AdapterView;
 import com.yingqida.richplay.pubuliu.XListView;
 import com.yingqida.richplay.pubuliu.XListView.IXListViewListener;
@@ -213,7 +214,7 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 		}
 
 		@Override
-		public Object getItem(int arg0) {
+		public DuitangInfo getItem(int arg0) {
 			return mInfos.get(arg0);
 		}
 
@@ -269,7 +270,13 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 
 		mAdapter = new StaggeredAdapter();
 
-		mImageFetcher = new ImageFetcher(getActivity(), 240);
+		mImageFetcher = new ImageFetcher(getActivity(), 240, new ICallBack() {
+
+			@Override
+			public void invoke(String name, int code) {
+
+			}
+		});
 		mImageFetcher.setImageCache(new ImageCache(getActivity(),
 				RichResource.PIC_PATH));
 		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
@@ -282,9 +289,13 @@ public class YuansuFragment extends SuperFragment implements IXListViewListener 
 					@Override
 					public void onItemClick(PLA_AdapterView<?> parent,
 							View view, int position, long id) {
+
 						startActivity(new Intent(
 								getActivity().getBaseContext(),
-								PicInfoActivity.class));
+								PicInfoActivity.class).putExtra("PURL",
+								mAdapter.getItem(Integer.valueOf(id + ""))
+										.getIsrc()));
+
 					}
 				});
 		return convertView;

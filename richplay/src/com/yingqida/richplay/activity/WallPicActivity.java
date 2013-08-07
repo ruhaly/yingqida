@@ -20,6 +20,8 @@ import android.widget.TextView;
 import com.yingqida.richplay.R;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.pubuliu.DuitangInfo;
+import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 import com.yingqida.richplay.pubuliu.PLA_AdapterView;
 import com.yingqida.richplay.pubuliu.XListView;
 import com.yingqida.richplay.pubuliu.XListView.IXListViewListener;
@@ -137,6 +139,8 @@ public class WallPicActivity extends SuperActivity implements
 
 		}
 	}
+
+	public ImageFetcher mImageFetcher;
 
 	public class StaggeredAdapter extends BaseAdapter {
 
@@ -300,7 +304,13 @@ public class WallPicActivity extends SuperActivity implements
 		mAdapterView.setXListViewListener(this);
 
 		mAdapter = new StaggeredAdapter();
+		mImageFetcher = initFetcher(mImageFetcher, new ICallBack() {
 
+			@Override
+			public void invoke(String name, int code) {
+
+			}
+		});
 		mAdapterView.setAdapter(mAdapter);
 		AddItemToContainer(currentPage, 2);
 		mAdapterView
@@ -309,14 +319,6 @@ public class WallPicActivity extends SuperActivity implements
 					@Override
 					public void onItemClick(PLA_AdapterView<?> parent,
 							View view, final int position, final long id) {
-						runOnUiThread(new Runnable() {
-
-							@Override
-							public void run() {
-								System.out.println("position:" + position
-										+ "id:" + id);
-							}
-						});
 						startActivity(new Intent(getBaseContext(),
 								PicInfoActivity.class).putExtra("PURL",
 								mAdapter.getItem(Integer.valueOf(id + ""))

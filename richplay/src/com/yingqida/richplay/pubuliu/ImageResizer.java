@@ -28,6 +28,7 @@ import android.graphics.Rect;
 import android.util.Log;
 
 import com.yingqida.richplay.BuildConfig;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 
 /**
  * A simple subclass of {@link ImageWorker} that resizes images from resources
@@ -47,10 +48,10 @@ public class ImageResizer extends ImageWorker {
 	 * @param imageWidth
 	 * @param imageHeight
 	 */
-	public ImageResizer(Context context, int imageWidth, int imageHeight) {
-		super(context);
-		setImageSize(imageWidth, imageHeight);
-	}
+	// public ImageResizer(Context context, int imageWidth, int imageHeight) {
+	// super(context);
+	// setImageSize(imageWidth, imageHeight);
+	// }
 
 	/**
 	 * Initialize providing a single target image size (used for both width and
@@ -59,8 +60,13 @@ public class ImageResizer extends ImageWorker {
 	 * @param context
 	 * @param imageSize
 	 */
-	public ImageResizer(Context context, int imageSize) {
-		super(context);
+	// public ImageResizer(Context context, int imageSize) {
+	// super(context);
+	// setImageSize(imageSize);
+	// }
+
+	public ImageResizer(Context context, int imageSize, ICallBack callback) {
+		super(context, callback);
 		setImageSize(imageSize);
 	}
 

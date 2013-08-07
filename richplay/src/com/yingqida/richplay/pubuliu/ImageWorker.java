@@ -31,6 +31,7 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import com.yingqida.richplay.BuildConfig;
+import com.yingqida.richplay.baseapi.common.UnSyncImageLoader.ICallBack;
 
 /**
  * This class wraps up completing some arbitrary long running work when loading
@@ -49,9 +50,15 @@ public abstract class ImageWorker {
 
 	protected Context mContext;
 	protected ImageWorkerAdapter mImageWorkerAdapter;
+	private ICallBack callback;
 
-	protected ImageWorker(Context context) {
+	protected ImageWorker(Context context, ICallBack callback) {
 		mContext = context;
+		this.callback = callback;
+	}
+
+	public interface ICallBack {
+		public void invoke(String name, int code);
 	}
 
 	/**
@@ -98,6 +105,72 @@ public abstract class ImageWorker {
 				task.execute(data, width);
 			}
 		}
+	}
+	Bitmap bitmap;
+	public Bitmap getLoadImage(Object data, ImageView imageView, int width,
+			boolean isFromDisk) {
+		if (isFromDisk) {
+			if (mImageCache != null) {
+				bitmap = mImageCache.getBitmapFromDiskCache(
+						String.valueOf(data), width);
+			}
+			if (null == bitmap) {
+				final getLoadImageTask task = new getLoadImageTask();
+				task.execute(data, width);
+			}
+
+		} else {
+
+			if (mImageCache != null) {
+				bitmap = mImageCache
+						.getBitmapFromMemCache(String.valueOf(data));
+			}
+
+			if (bitmap != null) {
+			} else if (cancelPotentialWork(data, imageView)) {
+				final getLoadImageTask task = new getLoadImageTask();
+				task.execute(data, width);
+			}
+		}
+		return bitmap;
+	}
+
+	private class getLoadImageTask extends AsyncTask<Object, Void, Bitmap> {
+		private Object data;
+
+		@Override
+		protected Bitmap doInBackground(Object... params) {
+			data = params[0];
+			final String dataString = String.valueOf(data);
+			final int width = Integer.valueOf(String.valueOf(params[1]));
+			Bitmap bitmap = null;
+			if (mImageCache != null) {
+				bitmap = mImageCache.getBitmapFromDiskCache(dataString, width);
+			}
+			if (bitmap == null) {
+				bitmap = processBitmap(params[0], width);
+			}
+			if (bitmap != null && mImageCache != null) {
+				mImageCache.addBitmapToCache(dataString, bitmap);
+			}
+			return bitmap;
+		}
+
+		/**
+		 * Once the image is processed, associates it to the imageView
+		 */
+		@Override
+		protected void onPostExecute(Bitmap bitmap) {
+			// if cancel was called on this task or the "exit early" flag is set
+			// then we're done
+			if (isCancelled() || mExitTasksEarly) {
+				bitmap = null;
+			}
+			if (bitmap != null) {
+				callback.invoke("success", 200);
+			}
+		}
+
 	}
 
 	/**
@@ -385,6 +458,7 @@ public abstract class ImageWorker {
 	 * @param bitmap
 	 */
 	private void setImageBitmap(ImageView imageView, Bitmap bitmap) {
+		callback.invoke("success", 200);
 		if (mFadeInBitmap) {
 			// Transition drawable with a transparent drwabale and the final
 			// bitmap

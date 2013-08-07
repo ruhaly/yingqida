@@ -42,6 +42,7 @@ import com.yingqida.richplay.baseapi.http.HttpResponseHanlder;
 import com.yingqida.richplay.baseapi.http.HttpTimeoutHandler;
 import com.yingqida.richplay.pubuliu.ImageCache;
 import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 import com.yingqida.richplay.service.NetWorkProxy;
 
 public abstract class SuperActivity extends HandleActivity implements
@@ -71,7 +72,6 @@ public abstract class SuperActivity extends HandleActivity implements
 
 	// 是否清除播放界面的数据
 	public static boolean isClearDate = false;
-	public ImageFetcher mImageFetcher;
 
 	public SuperActivity() {
 	}
@@ -194,11 +194,6 @@ public abstract class SuperActivity extends HandleActivity implements
 		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
 		initData();
-		mImageFetcher = new ImageFetcher(this, 240);
-		mImageFetcher.setImageCache(new ImageCache(getBaseContext(),
-				RichResource.PIC_PATH));
-		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
-		mImageFetcher.setExitTasksEarly(false);
 		initLayout();
 		TAG = this.getClass().getName();
 		ActivityStack.getIns().pushActivity(this);
@@ -454,5 +449,15 @@ public abstract class SuperActivity extends HandleActivity implements
 	 */
 	public boolean isSuccessLogin() {
 		return getAppShare().getBoolean(Constant.LOGGED_ON, false);
+	}
+
+	public ImageFetcher initFetcher(ImageFetcher mImageFetcher,
+			ICallBack callback) {
+		mImageFetcher = new ImageFetcher(this, 240, callback);
+		mImageFetcher.setImageCache(new ImageCache(getBaseContext(),
+				RichResource.PIC_PATH));
+		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
+		mImageFetcher.setExitTasksEarly(false);
+		return mImageFetcher;
 	}
 }

@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import com.yingqida.richplay.BuildConfig;
 import com.yingqida.richplay.baseapi.common.RichResource;
+import com.yingqida.richplay.baseapi.common.UnSyncImageLoader.ICallBack;
 
 /**
  * A simple subclass of {@link ImageResizer} that fetches and resizes images
@@ -45,6 +46,18 @@ public class ImageFetcher extends ImageResizer {
 	public static final String HTTP_CACHE_DIR = RichResource.PIC_PATH;// "http";
 
 	/**
+	 * Initialize providing a single target image size (used for both width and
+	 * height);
+	 * 
+	 * @param context
+	 * @param imageSize
+	 */
+	public ImageFetcher(Context context, int imageSize, ICallBack callback) {
+		super(context, imageSize, callback);
+		init(context);
+	}
+
+	/**
 	 * Initialize providing a target image width and height for the processing
 	 * images.
 	 * 
@@ -52,22 +65,10 @@ public class ImageFetcher extends ImageResizer {
 	 * @param imageWidth
 	 * @param imageHeight
 	 */
-	public ImageFetcher(Context context, int imageWidth, int imageHeight) {
-		super(context, imageWidth, imageHeight);
-		init(context);
-	}
-
-	/**
-	 * Initialize providing a single target image size (used for both width and
-	 * height);
-	 * 
-	 * @param context
-	 * @param imageSize
-	 */
-	public ImageFetcher(Context context, int imageSize) {
-		super(context, imageSize);
-		init(context);
-	}
+	// public ImageFetcher(Context context, int imageWidth, int imageHeight) {
+	// super(context, imageWidth, imageHeight);
+	// init(context);
+	// }
 
 	private void init(Context context) {
 		checkConnection(context);

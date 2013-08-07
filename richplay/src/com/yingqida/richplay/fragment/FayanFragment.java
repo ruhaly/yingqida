@@ -24,6 +24,7 @@ import com.yingqida.richplay.baseapi.common.RichResource;
 import com.yingqida.richplay.pubuliu.DuitangInfo;
 import com.yingqida.richplay.pubuliu.ImageCache;
 import com.yingqida.richplay.pubuliu.ImageFetcher;
+import com.yingqida.richplay.pubuliu.ImageWorker.ICallBack;
 import com.yingqida.richplay.pubuliu.PLA_AdapterView;
 import com.yingqida.richplay.pubuliu.XListView;
 import com.yingqida.richplay.pubuliu.XListView.IXListViewListener;
@@ -271,7 +272,13 @@ public class FayanFragment extends SuperFragment implements IXListViewListener {
 
 		mAdapter = new StaggeredAdapter();
 
-		mImageFetcher = new ImageFetcher(getActivity(), 240);
+		mImageFetcher = new ImageFetcher(getActivity(), 240, new ICallBack() {
+
+			@Override
+			public void invoke(String name, int code) {
+
+			}
+		});
 		mImageFetcher.setImageCache(new ImageCache(getActivity(),
 				RichResource.PIC_PATH));
 		mImageFetcher.setLoadingImage(R.drawable.empty_photo);
