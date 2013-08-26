@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.zxing.client.android.CaptureActivity;
 import com.yingqida.richplay.activity.LoginActivity;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.baseapi.AppUtil;
@@ -71,7 +72,7 @@ public class RichPalyActivity extends SuperActivity {
 							HomeActivity.class));
 				} else {
 					startActivity(new Intent(getBaseContext(),
-							LoginActivity.class));
+							CaptureActivity.class));
 				}
 				finish();
 			}

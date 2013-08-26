@@ -10,7 +10,6 @@
 	<classpathentry exported="true" kind="lib" path="libs/commons-httpclient-3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/commons-io.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/commons-logging-1.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="libs/core.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/fluent-hc-4.2.5.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpclient-4.2.5.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpclient-cache-4.2.5.jar"/>
