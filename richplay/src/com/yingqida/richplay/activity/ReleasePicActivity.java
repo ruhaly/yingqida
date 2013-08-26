@@ -39,7 +39,6 @@ import com.yingqida.richplay.baseapi.http.HttpRequest;
 import com.yingqida.richplay.entity.Album;
 import com.yingqida.richplay.entity.RleasePicEntity;
 import com.yingqida.richplay.packet.HttpSender;
-import com.zijunlin.Zxing.Demo.CaptureActivity;
 
 public class ReleasePicActivity extends SuperActivity implements
 		ActivityResultCode {
@@ -144,8 +143,8 @@ public class ReleasePicActivity extends SuperActivity implements
 			break;
 		}
 		case R.id.btnBarcode: {
-			Intent intent = new Intent(getBaseContext(), CaptureActivity.class);
-			startActivityForResult(intent, BAR_CODE_SCAN);
+//			Intent intent = new Intent(getBaseContext(), CaptureActivity.class);
+//			startActivityForResult(intent, BAR_CODE_SCAN);
 			break;
 		}
 		default:

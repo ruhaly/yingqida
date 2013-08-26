@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.zxing.client.android.CaptureActivity;
 import com.yingqida.richplay.activity.LoginActivity;
 import com.yingqida.richplay.activity.common.SuperActivity;
 import com.yingqida.richplay.baseapi.AppUtil;
@@ -15,7 +16,7 @@ import com.yingqida.richplay.baseapi.common.FileUtil;
 import com.yingqida.richplay.baseapi.map.LocManager;
 import com.yingqida.richplay.service.RichPlayService;
 
-public class RichPalyActivity extends SuperActivity {
+public class RichPlayActivity extends SuperActivity {
 
 	@Override
 	public void onClick(View v) {
