@@ -1173,7 +1173,8 @@ public class Main extends SuperActivity implements OnClickListener {
 	}
 
 	public void updateView() {
-		img = mImageFetcher.getLoadImage(getIntent().getStringExtra("PURL"),
+		img = mImageFetcher.getLoadImage(
+				String.valueOf(getIntent().getStringExtra("PURL")),
 				new ImageView(getBaseContext()), getScreenW(), true);
 		if (null != img) {
 			mPaintView.setLayoutParams(new LayoutParams(img.getWidth(), img

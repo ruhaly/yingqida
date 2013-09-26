@@ -6,6 +6,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.AsyncTask.Status;
 import android.util.Log;
@@ -170,6 +171,9 @@ public class WallPicActivity extends SuperActivity implements
 			holder.imageView.setLayoutParams(new LinearLayout.LayoutParams(
 					getScreenW() / 2, LinearLayout.LayoutParams.WRAP_CONTENT));
 			holder.contentView.setText(duitangInfo.getMsg());
+			// Bitmap tempb = mImageFetcher.getLoadImage(duitangInfo.getIsrc(),
+			// holder.imageView,
+			// getScreenW() / 2, false);
 			mImageFetcher.loadImage(duitangInfo.getIsrc(), holder.imageView,
 					getScreenW() / 2, false);
 			mImageFetcher.loadImage(duitangInfo.getHeader(), holder.imageView2,

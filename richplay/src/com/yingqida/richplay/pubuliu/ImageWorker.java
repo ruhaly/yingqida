@@ -31,7 +31,6 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import com.yingqida.richplay.BuildConfig;
-import com.yingqida.richplay.baseapi.common.UnSyncImageLoader.ICallBack;
 
 /**
  * This class wraps up completing some arbitrary long running work when loading
@@ -106,36 +105,37 @@ public abstract class ImageWorker {
 			}
 		}
 	}
-	Bitmap bitmap;
-	public Bitmap getLoadImage(Object data, ImageView imageView, int width,
+
+	public Bitmap getLoadImage(String data, ImageView imageView, int width,
 			boolean isFromDisk) {
+		Bitmap bitmapTemp = null;
 		if (isFromDisk) {
 			if (mImageCache != null) {
-				bitmap = mImageCache.getBitmapFromDiskCache(
+				bitmapTemp = mImageCache.getBitmapFromDiskCache(
 						String.valueOf(data), width);
 			}
-			if (null == bitmap) {
-				final getLoadImageTask task = new getLoadImageTask();
+			if (null == bitmapTemp) {
+				final GetLoadImageTask task = new GetLoadImageTask();
 				task.execute(data, width);
 			}
 
 		} else {
 
 			if (mImageCache != null) {
-				bitmap = mImageCache
-						.getBitmapFromMemCache(String.valueOf(data));
+				bitmapTemp = mImageCache.getBitmapFromMemCache(String
+						.valueOf(data));
 			}
 
-			if (bitmap != null) {
+			if (bitmapTemp != null) {
 			} else if (cancelPotentialWork(data, imageView)) {
-				final getLoadImageTask task = new getLoadImageTask();
+				final GetLoadImageTask task = new GetLoadImageTask();
 				task.execute(data, width);
 			}
 		}
-		return bitmap;
+		return bitmapTemp;
 	}
 
-	private class getLoadImageTask extends AsyncTask<Object, Void, Bitmap> {
+	private class GetLoadImageTask extends AsyncTask<Object, Void, Bitmap> {
 		private Object data;
 
 		@Override

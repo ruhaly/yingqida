@@ -1,6 +1,8 @@
 package com.yingqida.richplay.baseapi.db;
 
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -117,5 +119,24 @@ public class WallPicDaoImpl {
 			return;
 		database.execSQL(String.format("delete from %s where id=%s", TB_NAME,
 				id));
+	}
+
+	class Duser implements Observer {
+
+		@Override
+		public void update(Observable observable, Object data) {
+
+		}
+
+	}
+
+	class User extends Observable {
+		public void notifyDUser() {
+			notifyObservers("12");
+			user.addObserver(new Duser());
+		}
+
+		User user = new User();
+
 	}
 }

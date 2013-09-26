@@ -265,7 +265,6 @@
 
     <style name="CustomRadioButton1">
         <item name="android:button">@null</item>
-        <item name="android:drawableLeft">@drawable/size_radioxm_1</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 

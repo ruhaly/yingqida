@@ -5,6 +5,11 @@
     android:background="@color/Color_White"
     android:gravity="center_horizontal" >
 
+    <!-- <WebView -->
+    <!-- android:id="@+id/webview" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" /> -->
+
     <ImageView
         android:id="@+id/image1"
         android:layout_width="wrap_content"
